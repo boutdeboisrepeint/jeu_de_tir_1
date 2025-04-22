@@ -11,7 +11,7 @@ class Player(pygame.sprite.Sprite):
         self.attack = 10
         self.velocity = 1
         self.all_projectiles = pygame.sprite.Group()
-        self.image = pygame.image.load('jeu/player/vaisseau-spatial.png')
+        self.image = pygame.image.load('./player/vaisseau-spatial.png')
         self.image = pygame.transform.scale(self.image, (64, 64))
         self.rect = self.image.get_rect()
         self.rect.x = 640
