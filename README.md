@@ -1,3 +1,7 @@
 # jeu_de_tir_1
 
-# test marckDown>
+# Prestentation du jeux
+
+![Fond d'ecran](./background.jpg)
+
+#  lolollol

@@ -3,6 +3,7 @@ from game import Game
 
 pygame.init()
 
+# Pense a initialiser une variable avec le path global
 
 
 #générer la fenetre du jeu
