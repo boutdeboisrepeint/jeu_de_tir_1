@@ -6,7 +6,7 @@ class Monster_proj(pygame.sprite.Sprite):
         super().__init__()
         self.velocity = 1
         self.monster = monster
-        self.image = pygame.image.load('jeu/projectiles/monster_shot.png')
+        self.image = pygame.image.load('./projectiles/monster_shot.png')
         self.image = pygame.transform.rotozoom(self.image, 270, 1)
         self.rect = self.image.get_rect()
         self.rect.x = monster.rect.x

@@ -13,7 +13,7 @@ class Monster(pygame.sprite.Sprite):
         self.max_health = 100
         self.attack = 5
         self.all_monster_projectiles = pygame.sprite.Group()
-        self.image = pygame.image.load('jeu/monstres/monstre.png')
+        self.image = pygame.image.load('./monstres/monstre.png')
         self.image = pygame.transform.scale(self.image, (80, 80))
         self.rect = self.image.get_rect()
         self.rect.x = randint(300, 1000)

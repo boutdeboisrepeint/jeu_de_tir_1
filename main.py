@@ -6,12 +6,12 @@ pygame.init()
 
 
 #générer la fenetre du jeu
-pygame.display.set_caption("game", "jeu/icone.png")
+pygame.display.set_caption("game", "./icone.png")
 screen = pygame.display.set_mode((1280, 720))
 
 
 #charger l'arriere plan de notre jeu
-background = pygame.image.load('jeu/background.jpg')
+background = pygame.image.load('./background.jpg')
 background = pygame.transform.scale(background, (1280, 720))
 
 #charger le jeu

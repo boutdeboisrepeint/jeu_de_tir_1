@@ -8,7 +8,7 @@ class Projectile(pygame.sprite.Sprite):
             super().__init__()
             self.velocity = 1
             self.player = player
-            self.image = pygame.image.load('jeu/projectiles/blue_shots/blue_shot_1.png')
+            self.image = pygame.image.load('./projectiles/blue_shots/blue_shot_1.png')
             self.image = pygame.transform.scale(self.image, (40, 40))
             self.rect = self.image.get_rect()
             self.rect.x = player.rect.x + 5
@@ -23,13 +23,13 @@ class Projectile(pygame.sprite.Sprite):
     def move(self):
         self.rect.y -= self.velocity
         if self.rect.y > 600:
-                self.image = pygame.image.load('jeu/projectiles/blue_shots/blue_shot_1.png')
+                self.image = pygame.image.load('./projectiles/blue_shots/blue_shot_1.png')
         elif self.rect.y > 400:
-            self.image = pygame.image.load('jeu/projectiles/blue_shots/blue_shot_2.png')
+            self.image = pygame.image.load('./projectiles/blue_shots/blue_shot_2.png')
         elif self.rect.y > 200:
-            self.image = pygame.image.load('jeu/projectiles/blue_shots/blue_shot_3.png')
+            self.image = pygame.image.load('./projectiles/blue_shots/blue_shot_3.png')
         elif self.rect.y > 50:
-            self.image = pygame.image.load('jeu/projectiles/blue_shots/blue_shot_4.png')
+            self.image = pygame.image.load('./projectiles/blue_shots/blue_shot_4.png')
             
         #vérifier si le projectile entre en collision avec un monstre
         for monster in self.player.game.check_collision(self, self.player.game.all_monsters):
